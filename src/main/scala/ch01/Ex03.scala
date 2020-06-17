@@ -7,7 +7,6 @@ object Ex03 {
 
   def run(
     str: String = "Now I need a drink, alcoholic of course, after the heavy lectures involving quantum mechanics."
-  ): Array[Int] =
-    str.split(" ").map(_.length)
+  ): Array[Int] = str.split(" ").map(_.length)
 
 }
