@@ -5,23 +5,23 @@ package ch01
  */
 object Ex05 {
 
-  def runToWords(str: String = "I am an NLPer", n: Int = 2): Seq[Array[String]] = {
+  def biGramWithWords(str: String = "I am an NLPer"): Seq[Array[String]] = {
     val words = str.split(" ")
     (0 to str.length)
       .toSeq
       .map {
-        from => words.slice(from, from + n)
+        from => words.slice(from, from + 2)
       }
-      .filter(_.length == n)
+      .filter(_.length == 2)
   }
 
-  def runToChars(str: String = "I am an NLPer", n: Int = 2): Seq[String] = {
+  def biGramWithChars(str: String = "I am an NLPer"): Seq[String] = {
     (0 to str.length)
       .toSeq
       .map {
-        from => str.slice(from, from + n)
+        from => str.slice(from, from + 2)
       }
-      .filter(_.length == n)
+      .filter(_.length == 2)
   }
 
 }
