@@ -14,11 +14,8 @@ object Ex09 {
     str
       .split(" ")
       .map {
-        word =>
-          word match {
-            case r(x, y, z) => x + Random.shuffle(y) + z
-            case _ => word
-          }
+        case r(x, y, z) => x + Random.shuffle(y) + z
+        case s@_ => s
       }
       .mkString(" ")
   }
