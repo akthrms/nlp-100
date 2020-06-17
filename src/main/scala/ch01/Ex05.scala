@@ -6,11 +6,11 @@ package ch01
 object Ex05 {
 
   def runToWords(str: String = "I am an NLPer", n: Int = 2): Seq[Array[String]] = {
-    val strArray = str.split(" ")
+    val words = str.split(" ")
     (0 to str.length)
       .toSeq
       .map {
-        from => strArray.slice(from, from + n)
+        from => words.slice(from, from + n)
       }
       .filter(_.length == n)
   }
