@@ -13,9 +13,9 @@ object Ex11 {
     CSVReader
       .open(new File(filename))
       .foreach {
-        line => {
-          val replacedLine = line.map(_.replace('\t', ' ')).mkString
-          println(replacedLine)
+        columns => {
+          val replacedColumns = columns.map(_.replace('\t', ' ')).mkString
+          println(replacedColumns)
         }
       }
 
