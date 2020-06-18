@@ -1,10 +1,7 @@
-lazy val root = project
-  .in(file("."))
-  .settings(
-    name := "nlp-100",
-    version := "0.1.0",
+name := "nlp-100"
 
-    scalaVersion := "0.24.0-RC1",
+version := "0.1.0"
 
-    libraryDependencies += "com.novocode" % "junit-interface" % "0.11" % "test"
-  )
+scalaVersion := "2.13.1"
+
+libraryDependencies += "com.novocode" % "junit-interface" % "0.11" % "test"

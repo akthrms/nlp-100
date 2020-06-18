@@ -5,16 +5,16 @@ package ch01
  */
 object Ex06 {
 
-  val x = Ex05.biGramWithChars("paraparaparadise")
-  val y = Ex05.biGramWithChars("paragraph")
+  val x: Seq[String] = Ex05.biGramWithChars("paraparaparadise")
+  val y: Seq[String] = Ex05.biGramWithChars("paragraph")
 
-  val xSet = x.toSet
-  val ySet = y.toSet
+  val xSet: Set[String] = x.toSet
+  val ySet: Set[String] = y.toSet
 
-  val union = xSet | ySet
-  val intersect = xSet & ySet
-  val diff = xSet &~ ySet
+  val union: Set[String] = xSet | ySet
+  val intersect: Set[String] = xSet & ySet
+  val diff: Set[String] = xSet &~ ySet
 
-  val elemSe = union contains "se"
+  val containsSe: Boolean = union contains "se"
 
 }

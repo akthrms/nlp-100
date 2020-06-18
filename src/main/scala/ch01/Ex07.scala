@@ -5,6 +5,6 @@ package ch01
  */
 object Ex07 {
 
-  def run(x: String, y: String, z: String): String = s"${x}の時の${y}は${z}"
+  def run(x: String, y: String, z: String): String = s"${x}の時の${y}は$z"
 
 }

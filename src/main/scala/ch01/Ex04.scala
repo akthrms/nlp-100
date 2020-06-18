@@ -14,11 +14,10 @@ object Ex04 {
       .split(" ")
       .zipWithIndex
       .foldLeft(Map.empty[String, Int]) {
-        case (m, (s, i)) => {
+        case (m, (s, i)) =>
           val idx = i + 1
-          val until = if useHeadIndex.indexOf(idx) > -1 then 1 else 2
+          val until = if (useHeadIndex contains idx) 1 else 2
           m + (s.slice(0, until) -> i)
-        }
       }
 
 }

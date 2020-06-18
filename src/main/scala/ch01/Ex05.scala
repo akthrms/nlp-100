@@ -8,7 +8,6 @@ object Ex05 {
   def biGramWithWords(str: String = "I am an NLPer"): Seq[Array[String]] = {
     val words = str.split(" ")
     (0 to words.length)
-      .toSeq
       .map {
         from => words.slice(from, from + 2)
       }
@@ -17,7 +16,6 @@ object Ex05 {
 
   def biGramWithChars(str: String = "I am an NLPer"): Seq[String] = {
     (0 to str.length)
-      .toSeq
       .map {
         from => str.slice(from, from + 2)
       }
