@@ -6,3 +6,4 @@ Source Code for [言語処理100本ノック](https://nlp100.github.io/ja/).
 
 * Scala 2.13.1
 * sbt 1.3.8
+* scala-csv 1.3.6
