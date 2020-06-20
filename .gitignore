@@ -19,4 +19,5 @@ project/plugins/project/
 
 # output file
 src/main/scala/ch02/col1.txt
+src/main/scala/ch02/col1col2.txt
 src/main/scala/ch02/col2.txt
