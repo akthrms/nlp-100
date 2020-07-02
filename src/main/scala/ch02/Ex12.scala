@@ -23,9 +23,10 @@ object Ex12 {
       .pipe(CSVReader.open)
       .toStream
       .foreach {
-        case (x :: y :: _) =>
+        case x :: y :: _ =>
           csvWriter1.writeRow(List(x))
           csvWriter2.writeRow(List(y))
+        case _ => throw new Exception
       }
 
     csvWriter1.close()

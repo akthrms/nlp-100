@@ -29,6 +29,7 @@ object Ex13 {
       .zip(csvReaderStream2)
       .foreach {
         case (x :: _, y :: _) => csvWriter.writeRow(List(x, y))
+        case _ => throw new Exception
       }
 
     csvWriter.close()
